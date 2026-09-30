@@ -1,106 +1,303 @@
-/* Elemen 6: HTML Background & Color Text */
-/* Elemen 8: HTML Font */
-body {
-    background-color: #f0f2f5;
-    color: #333333;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+/* =========================
+   RESET
+========================= */
+
+* {
     margin: 0;
-    padding: 20px;
-    
-    /* Elemen 7: HTML Align (Posisi tengah vertikal & horizontal) */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* Card Container */
-.card {
-    background-color: #ffffff;
-    width: 100%;
-    max-width: 500px;
+
+/* =========================
+   BODY
+========================= */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-color: #f4f7fb;
+
+    color: #222;
+
+    line-height: 1.6;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    background-color: #111827;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 50px 20px;
+}
+
+header h1 {
+    font-size: 38px;
+
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #d1d5db;
+
+    font-size: 17px;
+}
+
+
+/* =========================
+   MAIN
+========================= */
+
+main {
+    width: 90%;
+
+    max-width: 900px;
+
+    margin: 40px auto;
+}
+
+
+/* =========================
+   SECTION
+========================= */
+
+section {
+    background-color: white;
+
     padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    
-    /* Elemen 7: HTML Align (Teks rata tengah) */
+
+    margin-bottom: 25px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+section h2 {
+    color: #111827;
+
+    margin-bottom: 20px;
+
+    font-size: 25px;
+}
+
+
+/* =========================
+   PROFILE
+========================= */
+
+.profile {
     text-align: center;
 }
 
-/* Styling Gambar Foto Profil (Bulat) */
 .profile-img {
-    width: 130px;
-    height: 130px;
-    border-radius: 50%;
+    width: 170px;
+
+    height: 170px;
+
     object-fit: cover;
-    border: 3px solid #007bff;
-    margin-bottom: 15px;
-}
 
-/* Headings */
-h1 {
-    font-size: 22px;
-    margin: 10px 0 5px 0;
-    color: #111111;
-}
-
-h3 {
-    font-size: 14px;
-    color: #666666;
-    font-weight: normal;
-    margin-bottom: 20px;
-}
-
-/* Ikon / Tombol Sosial Media */
-.social-container {
-    display: flex;
-    justify-content: center;
-    gap: 12px;
-    margin-bottom: 20px;
-}
-
-.social-btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 45px;
-    height: 45px;
     border-radius: 50%;
-    background-color: #f0f0f0;
-    color: #007bff;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 12px;
-    border: 1px solid #dddddd;
-    transition: 0.2s;
-}
 
-.social-btn:hover {
-    background-color: #007bff;
-    color: white;
-}
+    border: 6px solid #3b82f6;
 
-/* Date/Time */
-.time-info {
-    font-size: 12px;
-    color: #888888;
     margin-bottom: 20px;
 }
 
-/* Table */
-.info-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 10px;
+.profile h2 {
+    font-size: 30px;
+
+    margin-bottom: 8px;
 }
 
-.info-table th, .info-table td {
-    border: 1px solid #dddddd;
-    padding: 8px;
-    font-size: 13px;
+.identity {
+    color: #6b7280;
+
+    font-size: 16px;
 }
 
-.info-table th {
-    background-color: #007bff;
+
+/* =========================
+   SOCIAL MEDIA
+========================= */
+
+.social {
+    text-align: center;
+}
+
+.social-links {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+}
+
+.social-links a {
+    text-decoration: none;
+
+    background-color: #2563eb;
+
     color: white;
+
+    padding: 10px 20px;
+
+    border-radius: 8px;
+
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    background-color: #1d4ed8;
+
+    transform: translateY(-3px);
+}
+
+
+/* =========================
+   ABOUT
+========================= */
+
+.about p {
+    margin-bottom: 15px;
+
+    color: #4b5563;
+}
+
+
+/* =========================
+   TABLE
+========================= */
+
+table {
+    width: 100%;
+
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid #d1d5db;
+
+    padding: 13px;
+
+    text-align: left;
+}
+
+th {
+    width: 35%;
+
+    background-color: #eff6ff;
+
+    color: #1e3a8a;
+}
+
+td {
+    background-color: white;
+}
+
+
+/* =========================
+   SKILLS
+========================= */
+
+.skill-list {
+    display: flex;
+
+    gap: 12px;
+
+    flex-wrap: wrap;
+}
+
+.skill-list span {
+    background-color: #dbeafe;
+
+    color: #1e40af;
+
+    padding: 8px 16px;
+
+    border-radius: 20px;
+
+    font-weight: bold;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact a {
+    color: #2563eb;
+
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background-color: #111827;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 30px 20px;
+
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 5px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    main {
+        width: 94%;
+    }
+
+    section {
+        padding: 22px;
+    }
+
+    .profile-img {
+        width: 140px;
+
+        height: 140px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    th,
+    td {
+        padding: 9px;
+    }
+
 }
